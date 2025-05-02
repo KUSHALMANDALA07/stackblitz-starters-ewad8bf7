@@ -54,5 +54,5 @@ mongoose.connect(MONGO_URL,{
     console.log(`Example app listening at http://localhost:${port}`);
   });
 }).catch((err)=>{
-  res.status(500).send("Something went wrong",err);
+  console.log("MongoDB connection error:", err);
 });
